@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WS Doc</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/common.css">
+</head>
+<body>
+
+	<div class="wrapper blured" id="mainWrapper">
+		<header class="header">Chat</header>
+		<aside class="sidebar">
+			<ul id="userSide">
+				<li class="user-aside">
+                    <strong>John Doe</strong>
+                    <span>@jdoe</span>
+                </li>
+			</ul>
+		</aside>
+		<div class="main-body">
+			<ul id="messageWrapper">
+				<!-- <li class="message">
+					<strong><h2>Name</h2><h3>@nickname</h3></strong>
+					<span>14:09</span>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eligendi tempore suscipit soluta officia nobis dolorum vero debitis.</p>
+				</li> -->
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+		<div class="input-section">
+			<input type="text" class="message-input" placeholder="Message" id="messageInput">
+			<button class="message-btn" id="sendMessage">Send</button>
+		</div>
+	</div>
+
+	<div class="page-loader" id="pageLoader">
+		<strong></strong>
+	</div>
+
+	<div class="user-enterscreen-wrapper non-displayed" id="enterScreen">
+		<div class="user-enterscreen">
+			<header class="enterscreen-header">Enter to Chat</header>
+			<div class="enterscreen-body">
+				<label for="enterUserName">User Name</label>
+				<input type="text" id="enterUserName" placeholder="Name">
+
+				<label for="enterNickName">User Nickname</label>
+				<input type="text" id="enterNickName" placeholder="Nickname">
+			</div>
+			<button class="enterscreen-btn" id="enterScreenButton">OK</button>
+		</div>
+	</div>
+
+	<div class="info-crib" id="infoCrib">
+		<strong id="infoCribText">Enter your info to enter the Chat!</strong>
+	</div>
+
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="assets/scripts/main.js"></script>
+	<script src="assets/scripts/common.js"></script>
+</body>
+</html>
